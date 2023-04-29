@@ -19,4 +19,7 @@ public class MyArrayListStack {
     public boolean isEmpty(){
         return arrayList.isEmpty();
     }
+    public int size(){
+        return arrayList.size();
+    }
 }
