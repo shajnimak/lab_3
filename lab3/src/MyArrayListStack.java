@@ -10,10 +10,15 @@ public class MyArrayListStack<T> {
         arrayList.add(element);
     }
     public Object pop(){
-        arrayList.remove(arrayList.size()-1);
-        return arrayList.get(arrayList.size()-1);
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return arrayList.remove(arrayList.size()-1);
     }
     public Object peek(){
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
         return arrayList.get(arrayList.size()-1);
     }
     public boolean isEmpty(){
