@@ -6,6 +6,8 @@ public class MyArrayListStack {
     public MyArrayListStack(MyArrayList arrayList) {
         this.arrayList = arrayList;
     }
-
+    public void push(Object element){
+        arrayList.add(element);
+    }
 
 }
