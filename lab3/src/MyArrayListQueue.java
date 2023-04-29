@@ -7,5 +7,7 @@ public class MyArrayListQueue<T> {
     public MyArrayListQueue(MyLinkedList<T> linkedList) {
         this.linkedList = linkedList;
     }
-    public void push
+    public void push(Object element){
+        linkedList.add(element);
+    }
 }
