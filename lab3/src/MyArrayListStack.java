@@ -10,6 +10,7 @@ public class MyArrayListStack {
         arrayList.add(element);
     }
     public Object pop(){
-        return arrayList.remove(arrayList.size()-1);
+        arrayList.remove(arrayList.size()-1);
+        return arrayList.get(arrayList.size()-1);
     }
 }
