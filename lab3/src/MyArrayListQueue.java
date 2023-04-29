@@ -1,5 +1,7 @@
 import service.MyArrayList;
-import service.MyLinkedList;
+import java.util.NoSuchElementException;
+
+
 
 public class MyArrayListQueue<T> {
     MyArrayList<T> list = new MyArrayList<>();
@@ -11,9 +13,15 @@ public class MyArrayListQueue<T> {
         list.add(element);
     }
     public Object remove(){
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
         return list.remove(list.size()-1);
     }
     public Object peek(){
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
         return list.get(0);
     }
     public int size(){
