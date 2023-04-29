@@ -1,3 +1,5 @@
+package service;
+
 import repository.MyArray;
 
 public class MyLinkedList<T> implements MyArray {

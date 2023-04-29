@@ -1,3 +1,5 @@
+import service.MyArrayList;
+
 public class Main {
     public static void main(String[] args) {
         MyArrayList list = new MyArrayList();
@@ -41,7 +43,7 @@ public class Main {
         System.out.println();
         System.out.println();
 
-//        MyLinkedList linkedList = new MyLinkedList();
+//        service.MyLinkedList linkedList = new service.MyLinkedList();
 //        linkedList.add(5);
 //        linkedList.add(6);
 //        linkedList.add(3);
