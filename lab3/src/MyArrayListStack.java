@@ -9,5 +9,7 @@ public class MyArrayListStack {
     public void push(Object element){
         arrayList.add(element);
     }
-
+    public Object pop(){
+        return arrayList.remove(arrayList.size()-1);
+    }
 }
