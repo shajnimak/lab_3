@@ -13,5 +13,10 @@ public class MyArrayListQueue<T> {
     public Object remove(){
         return linkedList.remove(linkedList.size()-1);
     }
-
+    public Object peek(){
+        return linkedList.get(0);
+    }
+    public int size(){
+        return linkedList.size();
+    }
 }
