@@ -16,4 +16,7 @@ public class MyArrayListStack {
     public Object peek(){
         return arrayList.get(arrayList.size()-1);
     }
+    public boolean isEmpty(){
+        return arrayList.isEmpty();
+    }
 }
