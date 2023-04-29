@@ -193,6 +193,11 @@ public class MyArrayList<T> implements MyArray{
             throw new IndexOutOfBoundsException();
         }
     }
+
+    /**
+     * @isEmpty - Checks if an array is empty or not
+     * @return - Boolean (true/false)
+     */
     public boolean isEmpty(){
         if (size == 0){
             return true;
