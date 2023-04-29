@@ -13,4 +13,7 @@ public class MyArrayListStack {
         arrayList.remove(arrayList.size()-1);
         return arrayList.get(arrayList.size()-1);
     }
+    public Object peek(){
+        return arrayList.get(arrayList.size()-1);
+    }
 }
