@@ -10,4 +10,8 @@ public class MyArrayListQueue<T> {
     public void push(Object element){
         linkedList.add(element);
     }
+    public Object remove(){
+        return linkedList.remove(linkedList.size()-1);
+    }
+
 }
