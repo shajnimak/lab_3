@@ -1,7 +1,7 @@
 import service.MyArrayList;
 import java.util.EmptyStackException;
 public class MyArrayListStack {
-    MyArrayList arrayList = new MyArrayList();
+    MyArrayList arrayList = new MyArrayList<>();
 
     public MyArrayListStack(MyArrayList arrayList) {
         this.arrayList = arrayList;
