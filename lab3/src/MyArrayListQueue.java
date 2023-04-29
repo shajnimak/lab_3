@@ -7,4 +7,5 @@ public class MyArrayListQueue<T> {
     public MyArrayListQueue(MyLinkedList<T> linkedList) {
         this.linkedList = linkedList;
     }
+    public void push
 }

@@ -7,19 +7,19 @@ public class MyArrayListStack<T> {
         this.arrayList = arrayList;
     }
     public void push(Object element){
-        arrayList.add(element);
+        arrayList.add(element, 0);
     }
     public Object pop(){
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return arrayList.remove(arrayList.size()-1);
+        return arrayList.remove(0);
     }
     public Object peek(){
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return arrayList.get(arrayList.size()-1);
+        return arrayList.get(0);
     }
     public boolean isEmpty(){
         return arrayList.isEmpty();
