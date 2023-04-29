@@ -1,9 +1,9 @@
 import service.MyArrayList;
 import java.util.EmptyStackException;
-public class MyArrayListStack {
-    MyArrayList arrayList = new MyArrayList<>();
+public class MyArrayListStack<T> {
+    MyArrayList<T> arrayList = new MyArrayList<>();
 
-    public MyArrayListStack(MyArrayList arrayList) {
+    public MyArrayListStack(MyArrayList<T> arrayList) {
         this.arrayList = arrayList;
     }
     public void push(Object element){
