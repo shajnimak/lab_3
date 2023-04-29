@@ -1,5 +1,7 @@
 import service.MyArrayList;
+import service.MyLinkedList;
 
-public class MyArrayListQueue {
-    MyArrayList myArrayList = new MyArrayList<>();
+public class MyArrayListQueue<T> {
+    MyLinkedList<T> linkedList = new MyLinkedList<>();
+
 }
