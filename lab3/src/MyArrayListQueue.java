@@ -2,21 +2,24 @@ import service.MyArrayList;
 import service.MyLinkedList;
 
 public class MyArrayListQueue<T> {
-    MyLinkedList<T> linkedList = new MyLinkedList<>();
+    MyArrayList<T> list = new MyArrayList<>();
 
-    public MyArrayListQueue(MyLinkedList<T> linkedList) {
-        this.linkedList = linkedList;
+    public MyArrayListQueue(MyArrayList<T> list) {
+        this.list = list;
     }
     public void push(Object element){
-        linkedList.add(element);
+        list.add(element);
     }
     public Object remove(){
-        return linkedList.remove(linkedList.size()-1);
+        return list.remove(list.size()-1);
     }
     public Object peek(){
-        return linkedList.get(0);
+        return list.get(0);
     }
     public int size(){
-        return linkedList.size();
+        return list.size();
+    }
+    public boolean isEmpty(){
+        return list.isEmpty();
     }
 }
